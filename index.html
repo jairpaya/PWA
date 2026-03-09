@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering PWAs - Exposición</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">PWA<span>PRO</span></div>
+            <nav>
+                <a href="#" onclick="showPage('inicio')">Inicio</a>
+                <a href="#" onclick="showPage('alternativas')">Alternativas</a>
+                <a href="#" onclick="showPage('desarrolladores')">Desarrolladores</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="page active">
+            <div class="hero">
+                <h1>Web Progresivas (PWA)</h1>
+            </div>
+
+            <article class="content-box">
+                <h2>¿Qué son las web progresivas?</h2>
+                <p>Las <strong>Web Progresivas (PWA)</strong> son aplicaciones construidas con tecnologías web (Html, Css y JS) que ofrecen una experiencia de usuario similar a la de una app nativa, sin necesidad de descarga previa.</p>
+                <p class="origin">Impulsado por <strong>Google en 2015</strong> para combinar el alcance de la web con la potencia móvil.</p>
+            </article>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>¿Qué es una app nativa?</h3>
+                    <p>Desarrollada específicamente para un sistema operativo (Android/iOS). Respeta mejor el funcionamiento de la plataforma y es más fluida, pero requiere descargas pesadas.</p>
+                </div>
+                <div class="card highlight">
+                    <h3>¿Por qué "Progresivas"?</h3>
+                    <p>Porque se adaptan a las capacidades del dispositivo. En un navegador viejo es una web; en uno moderno, es una app con superpoderes.</p>
+                </div>
+            </div>
+
+            <h2>Funcionamiento Técnico</h2>
+            
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <h4>Service Workers</h4>
+                    <p>Scripts en segundo plano que permiten el modo <strong>Offline</strong> gestionando la caché.</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Web App Manifest</h4>
+                    <p>Archivo JSON que define iconos, nombre y pantalla de inicio para la instalación.</p>
+                </div>
+                <div class="tech-item">
+                    <h4>HTTPS</h4>
+                    <p>Seguridad obligatoria mediante certificados SSL para proteger los datos del usuario.</p>
+                </div>
+            </div>
+
+            <h2>Características y Ventajas</h2>
+            <div class="features-list">
+                <div class="feat"><span>✓</span> <strong>Offline:</strong> Cache API para funcionar sin internet.</div>
+                <div class="feat"><span>✓</span> <strong>Instalable:</strong> Añadir al home con un clic.</div>
+                <div class="feat"><span>✓</span> <strong>Push:</strong> Notificaciones para re-engagement.</div>
+                <div class="feat"><span>✓</span> <strong>App Shell:</strong> Diseño instantáneo sin parpadeos.</div>
+                <div class="feat"><span>✓</span> <strong>SEO:</strong> Indexable por buscadores.</div>
+            </div>
+
+            <div class="pros-cons">
+                <div class="pros">
+                    <h3>Por qué desarrollarlas</h3>
+                    <ul>
+                        <li>Costo-Efectividad (Un solo código).</li>
+                        <li>Mayor Alcance (Tráfico orgánico).</li>
+                        <li>Independencia de tiendas (Sin comisiones).</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>Desventajas</h3>
+                    <ul>
+                        <li>Hardware limitado (FaceID/Bluetooth).</li>
+                        <li>Restricciones en iOS/Apple.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Casos de Éxito</h2>
+            <div class="success-grid">
+                <div class="brand">Twitter Lite</div>
+                <div class="brand">Pinterest</div>
+                <div class="brand">Starbucks</div>
+                <div class="brand">Uber</div>
+                <div class="brand">Spotify</div>
+            </div>
+            <p class="note">Lograron: Menos consumo de datos (redes 2G/3G) y mayor velocidad.</p>
+
+            <div class="conclusion">
+                <h3>Conclusión</h3>
+                <p>Las PWA son la evolución natural de la web. Representan el equilibrio perfecto entre inmediatez y potencia, siendo la respuesta inteligente para el futuro del software móvil.</p>
+            </div>
+        </section>
+
+        <section id="alternativas" class="page">
+            <h2>Alternativas al Desarrollo PWA</h2>
+            <p>Dependiendo del proyecto, podrías considerar estos otros caminos:</p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Alternativa</th>
+                            <th>Descripción</th>
+                            <th>Uso ideal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nativa Pura</td>
+                            <td>Swift/Kotlin</td>
+                            <td>Juegos 3D y apps de alto rendimiento.</td>
+                        </tr>
+                        <tr>
+                            <td>Híbridas</td>
+                            <td>Ionic/Cordova</td>
+                            <td>Acceso total a sensores de la tienda.</td>
+                        </tr>
+                        <tr>
+                            <td>Cross-Platform</td>
+                            <td>React Native/Flutter</td>
+                            <td>Rendimiento nativo con un solo código.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn-primary" onclick="showPage('inicio')">Regresar al Inicio</button>
+        </section>
+
+        <section id="desarrolladores" class="page">
+            <h2>Equipo de Desarrollo</h2>
+            <div class="dev-card">
+                <h3>Presentado por: Jair Steven Paya Bedoya</h3>
+                <hr>
+                <h4>Referencias:</h4>
+                <ul class="refs">
+                    <li>Pragma Academia: Aplicaciones Web Progresivas</li>
+                    <li>Intelequia Blog: Qué es una PWA</li>
+                    <li>IEBS School: Usabilidad en PWA</li>
+                    <li>Universidad Europea: Service Workers y Caché</li>
+                </ul>
+            </div>
+            <button class="btn-primary" onclick="showPage('inicio')">Regresar al Inicio</button>
+        </section>
+    </main>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+            window.scrollTo(0,0);
+        }
+    </script>
+</body>
+</html>
